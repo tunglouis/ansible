@@ -1,0 +1,4 @@
+[dev]
+dev1 ansible_host=139.162.21.142  ansible_user=dev
+dev2 ansible_host=139.162.4.201 ansible_user=dev
+devlocal ansible_host=10.10.0.7 ansible_user=savvycom

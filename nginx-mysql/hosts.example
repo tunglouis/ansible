@@ -1,0 +1,2 @@
+[dev]
+devlocal ansible_host=10.10.0.7 ansible_user=tungpv

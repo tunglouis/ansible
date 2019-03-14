@@ -1,0 +1,7 @@
+---
+# Các lệnh handlers
+- name: START NGINX
+  service: name=nginx state=started
+
+- name: RESTART NGINX
+  service: name=nginx state=restarted

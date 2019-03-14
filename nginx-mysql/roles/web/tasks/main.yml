@@ -1,0 +1,7 @@
+---
+- name: INSTALL NGINX
+  apt: name=nginx update_cache=yes
+
+- name: CONFIG VITUAL HOST
+  template: src=default.conf dest=/etc/nginx/conf.d/{{ server_hostname }}.conf
+  notify: RESTART NGINX

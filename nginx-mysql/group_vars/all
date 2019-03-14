@@ -1,0 +1,9 @@
+# Các biến trong project
+server_hostname: tungpv.domainname.vn
+server_address: 127.0.0.1
+server_port: 1337
+mysql_name: db
+mysql_user: my user
+mysql_pass: my pass
+mysql_port: my port
+host_client: 0.0.0.0

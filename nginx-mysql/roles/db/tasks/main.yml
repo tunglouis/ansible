@@ -1,0 +1,16 @@
+---
+- name: INSTALL MYSQL SERVER
+  apt: name={{item}} update_cache=yes
+  with_items:
+    - mysql-server
+    - python-mysqldb
+- name: CREATE DATABASE
+  mysql_db: name={{mysql_name}}
+- name: CREATE USER FOR DATABASE
+  mysql_user: name={{mysql_user}} password={{mysql_pass}} priv={{mysql_name}}.*:ALL host={{host_client}}
+- name: COPY MYSQL CONFIGURATION FILE
+  template: src=my.cnf.j2 dest=/etc/my.cnf
+  notify:
+    - RESTART MYSQL
+- name: START MYSQL SERVICE
+  service: name=mysqld state=started enablesd=yes

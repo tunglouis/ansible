@@ -1,0 +1,10 @@
+---
+- name: INSTALL NGINX
+  hosts: dev1
+  remote_user: dev
+  become: yes
+  become_method: sudo
+
+  roles:
+    - web
+    - db
