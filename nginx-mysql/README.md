@@ -47,7 +47,7 @@ Ansible/
  </ul>
 
 
-- Bây giờ chúng ta thực hiện chạy file playbook wp.yml rồi đi pha 1 ly cafe ngồi đợi thôi .
+- Bây giờ chúng ta thực hiện chạy file playbook main.yml rồi đi pha 1 ly cafe ngồi đợi thôi .
 
 ```sh
 cd /etc/ansible
